@@ -1,3 +1,6 @@
 [submodule "bundle/omnisharp"]
 	path = bundle/omnisharp
 	url = https://github.com/OmniSharp/omnisharp-vim
+[submodule ".\\bundle\\vim-dispatch"]
+	path = .\\bundle\\vim-dispatch
+	url = https://github.com/ashic/vim-dispatch
