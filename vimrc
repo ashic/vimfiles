@@ -4,7 +4,11 @@
 set nocompatible                  " Must come first because it changes other options.
 
 execute pathogen#infect()
-
+" =============== Nerdtree
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " =============== Neocomplete begin
 
 autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
