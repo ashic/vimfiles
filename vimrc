@@ -12,6 +12,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " =============== Neocomplete begin
 
 autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
+
+let g:OmniSharp_server_type = 'v1'
+let g:OmniSharp_server_type = 'roslyn'
+
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
