@@ -4,6 +4,9 @@
 set nocompatible                  " Must come first because it changes other options.
 
 execute pathogen#infect()
+" Turn off flashing
+set vb
+set t_vb=
 " =============== Nerdtree
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
