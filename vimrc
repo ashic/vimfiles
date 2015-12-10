@@ -63,7 +63,7 @@ let g:neocomplete#disable_auto_complete = 0
 
 " Enable heavy omni completion.
 
-call neocomplete#custom#source('_', 'sorters', [])
+" call neocomplete#custom#source('_', 'sorters', [])
 
 if !exists('g:neocomplete#sources')
         let g:neocomplete#sources = {}
